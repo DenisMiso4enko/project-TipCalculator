@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/app.js" defer></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <div class="calculator">
+        <div class="calculator__left">
+          <div class="bill">
+            <h3 class="subtitle">Bill</h3>
+            <input
+              class="bill-input"
+              type="number"
+              placeholder="0"
+              min="0"
+              max="5000"
+            />
+          </div>
+
+          <div class="tip">
+            <h3 class="subtitle">Select Tip %</h3>
+            <div class="btns-wrapper">
+              <button class="btn-tip">5%</button>
+              <button class="btn-tip">10%</button>
+              <button class="btn-tip">15%</button>
+              <button class="btn-tip">25%</button>
+              <button class="btn-tip">50%</button>
+              <input
+                class="tip-input"
+                type="number"
+                min="0"
+                max="100"
+                placeholder="Custom"
+              />
+              <!-- <button class="btn-tip custom">Custom</button> -->
+            </div>
+          </div>
+
+          <div class="peoples">
+            <div class="wrap">
+              <h3 class="subtitle">Number of People</h3>
+              <p class="subtitle-error">Can't be zero</p>
+            </div>
+            <!-- <h3 class="subtitle">Number of People</h3>
+            <p>Can't be zero</p> -->
+            <input
+              class=""
+              type="number"
+              placeholder="0"
+              value=""
+              min="0"
+              max="20"
+              id="people"
+            />
+          </div>
+        </div>
+
+        <div class="calculator__right">
+          <div class="price-wrapper">
+            <div class="output amount">
+              <p class="output-subtitle">
+                Tip Amount <br /><span class="person">/ person</span>
+              </p>
+              <h2 class="tip-price tip-amount">$0.00</h2>
+            </div>
+  
+            <div class="output total">
+              <p class="output-subtitle">
+                Total<br /><span class="person">/ person</span>
+              </p>
+              <h2 class="tip-price tip-total">$0.00</h2>
+            </div>
+          </div>
+          
+
+          <button class="btn-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
